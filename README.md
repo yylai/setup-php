@@ -46,6 +46,7 @@ Setup PHP with required extensions, php.ini configuration, code-coverage support
   - [Multi-Arch Setup](#multi-arch-setup)
   - [Self Hosted Setup](#self-hosted-setup)
   - [Local Testing Setup](#local-testing-setup)
+  - [CLI Usage](#cli-usage)
   - [JIT Configuration](#jit-configuration)
   - [Cache Extensions](#cache-extensions)
   - [Cache Composer Dependencies](#cache-composer-dependencies)
@@ -742,6 +743,14 @@ act -P ubuntu-24.04=shivammathur/node:2404
 
 # For runs-on: ubuntu-22.04
 act -P ubuntu-22.04=shivammathur/node:2204
+```
+
+### CLI Usage
+
+> Run `setup-php` directly without GitHub Actions.
+
+```bash
+node dist/cli.js --php-version=8.4 --extensions=xdebug
 ```
 
 ### JIT Configuration

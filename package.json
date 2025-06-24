@@ -4,6 +4,9 @@
   "private": false,
   "description": "Setup PHP for use with GitHub Actions",
   "main": "lib/install.js",
+  "bin": {
+    "setup-php": "dist/cli.js"
+  },
   "types": "lib/install.d.ts",
   "directories": {
     "lib": "lib",
